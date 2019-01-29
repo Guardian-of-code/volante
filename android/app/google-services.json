@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "363195076352",
+    "firebase_url": "https://volante-106b5.firebaseio.com",
+    "project_id": "volante-106b5",
+    "storage_bucket": "volante-106b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363195076352:android:19cc98667d9f3bd7",
+        "android_client_info": {
+          "package_name": "com.awesomeproj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363195076352-89b8fsi8n7dcu6p3fsmga4660d8h41t3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9K_S9H7WqUUrVVpIzij4X0WXCyNcPUQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
