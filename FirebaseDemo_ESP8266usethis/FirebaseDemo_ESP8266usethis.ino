@@ -5,7 +5,7 @@
 
 // Set these to firebase values
 #define FIREBASE_HOST "volante-106b5.firebaseio.com"
-#define FIREBASE_AUTH "eGlnfxbikUnr1RzoO8NT7YT58OTxgBDHa5tzcg4R"
+#define FIREBASE_AUTH "askAuthor"
 #define WIFI_SSID "AndroidAP"
 #define WIFI_PASSWORD "xyz10000"
 
