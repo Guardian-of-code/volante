@@ -19,18 +19,27 @@ this.readUserData()
   }
   readUserData() {
 
-      firebase.database().ref('Electrical/').on('value',  (snapshot)=> {
-          console.log('hello'+snapshot.val().BatteryPercentage)
-        this.setState({batteryPer:snapshot.val().BatteryPercentage});
+      firebase.database().ref('BatteryPercentage/').on('value',  (snapshot)=> {
+          console.log('hello'+snapshot.val())
 
-        console.log('hello'+snapshot.val().temperature)
-      this.setState({temp:snapshot.val().temperature});
-
-      console.log('hello'+snapshot.val().SeatBelt)
-      this.setState({seatBelt:snapshot.val().SeatBelt});
+        this.setState({batteryPer:snapshot.val()});
       });
 
+      firebase.database().ref('temperature/').on('value', (snapshot)=> {
+          console.log('hello'+snapshot.val())
+          this.setState({temp:snapshot.val()});
+        //temp = snapshot.val();
 
+      });
+
+      firebase.database().ref('SeatBelt/').on('value', (snapshot)=> {
+          console.log('hello'+snapshot.val())
+          this.setState({seatBelt:snapshot.val()});
+      //seatBelt = snapshot.val();
+
+      });
+      //console.log('message',message);
+      //return message
   }
   render(){
     console.log('works')

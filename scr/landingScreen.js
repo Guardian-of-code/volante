@@ -4,11 +4,12 @@ import {Container,Content,Button,Header} from 'native-base';
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import ElectricalScreen from './electricalScreen';
 import ICscreen from './icScreen';
+import GeolocationScreen from './speed';
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
+    'Double tap R on your keyboard to reload,\n' 
+
 });
 
 const welcome =  'Welcome\n'+' to\n'+ ' Team Volante! '
@@ -74,7 +75,8 @@ const RootStack = createStackNavigator(
       screen: LandingScreen,
     },
     Electrical:{
-      screen: ElectricalScreen,
+      //screen: ElectricalScreen,
+      screen:GeolocationScreen,
     },
     ICscr:{
       screen: ICscreen,
